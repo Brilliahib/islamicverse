@@ -1,0 +1,212 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #C6E2DE !important;
+}
+
+nav button {
+    border: 0 !important;
+}
+
+nav ul li a {
+    color: black !important;
+    margin-left: 4rem;
+    font-weight: 800;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    overflow: hidden;
+    background-image: url(img/bg-home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    display: flex;
+}
+
+.home-text {
+    flex: 0.75;
+    padding-top: 2rem;
+}
+
+.home-text h1 {
+    font-weight: 800;
+    font-size: 4em;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+.about {
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-content {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.about-content img {
+    width: 600px;
+}
+
+.about-content .about-text h1 {
+    font-weight: 800;
+    font-size: 3.5em;
+}
+
+.about-content .about-text p {
+    padding-bottom: 2rem;
+}
+
+.about-content .about-text .button {
+    padding: 16px 36px;
+    background-color: #009462;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 148, 98, 0.5);
+}
+
+.jadwal-sholat {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+.jadwal-sholat-content {
+    background-color: rgba(198, 227, 222, 0.3);
+    border-radius: 40px;
+    padding: 0px 40px;
+    background-image: url(img/pattern.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.jadwal-sholat-content .date {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.jadwal-sholat-content .date span {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.jadwal-sholat-content .hero .nextPrayer {
+    padding-bottom: 2rem;
+}
+
+/* PAGE TENTANG.HTML */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+    background-color: #C6E3DE;
+    margin-top: -3.5rem;
+    background-image: url(img/bg-home.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.heading-content h1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.jadwal {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PAGE AYOBELAJAR.HTML */
+.card-surat {
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.card-surat:hover {
+    background-color: #caded1;
+}
+
+/* PAGE DETAIL SURAT AL QURAN */
+.card-isi-surat .card {
+    padding: 1rem;
+}
+
+.detail-surat p {
+    padding-bottom: 0.5rem;
+}
+
+.detail-surat .button {
+    padding: 8px 28px;
+    background-color: #009462;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 148, 98, 0.5);
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 80%;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .home-content {
+        display: block;
+    }
+
+    br {
+        display: none;
+    }
+
+    .home-text h1 {
+        font-size: 4em;
+    }
+
+    .about-content {
+        display: block;
+    }
+
+    .about-text {
+        padding-top: 4rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        padding-top: 4rem;
+    }
+
+    .about-image {
+        padding-top: 4rem;
+    }
+
+    .ornament h1 {
+        padding-top: 24px;
+    }
+
+    .ornament img {
+        width: 50px;
+    }
+}
