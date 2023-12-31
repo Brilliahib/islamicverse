@@ -19,6 +19,22 @@ nav ul li a {
     font-weight: 800;
 }
 
+.dropdown-menu li a {
+    margin-left: 0 !important;
+    color: black;
+    font-weight: 600;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #C6E2DE;
+}
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -167,6 +183,10 @@ nav ul li a {
 @media (max-width: 576px) {
     html {
         font-size: 80%;
+    }
+
+    nav ul li a {
+        margin-left: 0;
     }
 
     .container {
