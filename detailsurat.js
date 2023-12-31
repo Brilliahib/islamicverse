@@ -22,7 +22,9 @@ fetch(endpoint)
         const cardJudulSUrat = `
         <strong>${result.nama_latin} - ${result.nama}</strong>
         <p>Jumlah ayat : ${result.jumlah_ayat} (${result.arti})</p>
-        <a href="" class="button">Dengarkan</a>
+        <button class="btn btn-primary audio-button-play">Dengarkan</button>
+        <button class="btn btn-danger hidden-button audio-button-pause">Stop</button>
+        <audio id="audio-tag" src="${result.audio}"></audio>
         `
         judulSurat.innerHTML = cardJudulSUrat;
         console.log(judulSurat);
@@ -37,15 +39,31 @@ fetch(endpoint)
             <div class="card-body">
             <p>${s.nomor}.</p>
             <h3 class="text-end">${s.ar}</h3>
-            <p>${s.tr}</p>
+            <p class="ayat">${s.tr}</p>
             <p>${s.idn}</p>
         </div>
         </div>
             `;
         });
-        const cardIsiSurat = document.querySelector('.card-isi-surat');
-        cardIsiSurat.innerHTML = isiSurat;
 
         console.log(surat);
         // END ISI SURAT
+        const cardIsiSurat = document.querySelector('.card-isi-surat');
+        cardIsiSurat.innerHTML = isiSurat;
+
+        const buttonPlay = document.querySelector('.audio-button-play')
+        const buttonPause = document.querySelector('.audio-button-pause')
+        const audioSurat = document.querySelector('#audio-tag')
+
+        buttonPlay.addEventListener('click', function () {
+            buttonPlay.classList.add('hidden-button');
+            buttonPause.classList.remove('hidden-button');
+            audioSurat.play();
+        })
+
+        buttonPause.addEventListener('click', function () {
+            buttonPause.classList.add('hidden-button');
+            buttonPlay.classList.remove('hidden-button');
+            audioSurat.pause();
+        })
     });
