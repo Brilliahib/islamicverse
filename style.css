@@ -11,7 +11,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: #fff;
+    background: #fff, no-repeat;
     top: 0;
     left: 0;
     display: flex;
@@ -24,7 +24,6 @@ body {
     width: 600px;
     /* Sesuaikan ukuran gambar preloader */
     height: 400px;
-    animation-iteration-count: 1;
 }
 
 nav {
