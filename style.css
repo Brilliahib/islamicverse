@@ -24,6 +24,7 @@ body {
     width: 600px;
     /* Sesuaikan ukuran gambar preloader */
     height: 400px;
+    animation-iteration-count: 1;
 }
 
 nav {
