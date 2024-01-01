@@ -5,6 +5,27 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.preload {
+    z-index: 9999;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.preload img {
+    width: 600px;
+    /* Sesuaikan ukuran gambar preloader */
+    height: 400px;
+}
+
 nav {
     background-color: #C6E2DE !important;
 }
