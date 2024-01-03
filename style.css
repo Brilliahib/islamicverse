@@ -69,11 +69,14 @@ nav ul li a {
 
 .home-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-text {
     flex: 0.75;
     padding-top: 2rem;
+    text-align: center;
 }
 
 .home-text h1 {
@@ -212,7 +215,7 @@ nav ul li a {
 
 /* GERAKAN SHOLAT */
 .gerakansholat .card-body {
-    height: 300px;
+    height: 350px;
 }
 
 .gerakansholat .card-body:hover {
