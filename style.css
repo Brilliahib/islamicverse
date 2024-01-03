@@ -236,6 +236,10 @@ nav ul li a {
     color: white;
 }
 
+.gerakansholat img {
+    flex-shrink: 0;
+}
+
 @media (max-width: 576px) {
     html {
         font-size: 80%;
@@ -296,8 +300,13 @@ nav ul li a {
     }
 
     .gerakansholat .card-body {
-        width: fit-content;
+        height: fit-content !important;
         font-size: 90%;
+        display: block !important;
+    }
+
+    .gerakansholat .card-nomor {
+        width: fit-content;
     }
 
     .gerakansholat .card-body .text-content {
@@ -305,6 +314,8 @@ nav ul li a {
     }
 
     .gerakansholat .card-body img {
-        width: 100px;
+        width: 125px;
+        margin-bottom: 24px;
     }
+
 }
