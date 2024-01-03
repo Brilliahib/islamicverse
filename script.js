@@ -120,7 +120,7 @@ function cekKota() {
 
 
 function getJadwalDay() {
-    fetch('https://api.banghasan.com/sholat/format/json/jadwal/kota/' + cekKota() + '/tanggal/' + tanggal)
+    fetch('https://api.banghasan.com/v2/sholat/format/json/jadwal/kota/' + cekKota() + '/tanggal/' + tanggal)
         .then(response => response.json())
         .then(data => {
             const jadwal = data.jadwal.data;
