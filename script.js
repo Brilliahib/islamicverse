@@ -117,17 +117,6 @@ function cekKota() {
     return cekKota;
 }
 
-
-
-function getJadwalDay() {
-    fetch('https://api.banghasan.com/v2/sholat/format/json/jadwal/kota/' + cekKota() + '/tanggal/' + tanggal)
-        .then(response => response.json())
-        .then(data => {
-            const jadwal = data.jadwal.data;
-            dataJadwal(jadwal);
-        });
-}
-
 function dataJadwal(jadwal) {
     document.querySelector('.imsak').textContent = jadwal.imsak;
     document.querySelector('.subuh').textContent = jadwal.subuh;
