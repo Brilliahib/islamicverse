@@ -127,12 +127,11 @@ nav ul li a {
 }
 
 .profile-content .button {
-    padding: 16px 36px;
+    padding: 14px 32px;
     background-color: #009462;
     border-radius: 40px;
     text-decoration: none;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 148, 98, 0.5);
 }
 
 .profile-content .profile-text {
@@ -148,12 +147,13 @@ nav ul li a {
 
 .service {
     overflow: hidden;
-    margin-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 .service-content .service-heading {
-    margin-bottom: 2.5rem;
+    margin-bottom: 6rem;
 }
+
 
 .service-content .service-heading h1 {
     font-weight: 800;
@@ -161,10 +161,16 @@ nav ul li a {
 
 .service-content .card {
     border: 0 !important;
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 1rem 2rem;
+    overflow: visible;
+}
+
+.service-content .card img {
+    margin-top: -5rem;
+    width: 100px;
 }
 
 .service-content .card .card-title {
@@ -173,10 +179,26 @@ nav ul li a {
     font-weight: 700;
 }
 
+.service-content .card-text {
+    padding-bottom: 1rem;
+}
+
+.service-content .card {
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-content .button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #009462;
+    text-decoration: none;
+    color: white;
+}
+
 .about {
     align-items: center;
     overflow: hidden;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 
 .about-content {
@@ -206,12 +228,11 @@ nav ul li a {
 }
 
 .about-content .about-text .button {
-    padding: 16px 36px;
+    padding: 14px 32px;
     background-color: #009462;
     border-radius: 40px;
     text-decoration: none;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 148, 98, 0.5);
 }
 
 .jadwal-sholat {
@@ -664,6 +685,10 @@ nav ul li a {
     .logo-content-img {
         display: flex;
         justify-content: center;
+    }
+
+    .service-content .card {
+        margin-bottom: 4rem !important;
     }
 
 }
