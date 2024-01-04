@@ -604,10 +604,13 @@ nav ul li a {
 
     .tentang-content .tentang-image {
         width: 100% !important;
+        justify-content: center !important;
     }
 
     .tentang-content .tentang-image img {
-        width: 350px;
+        width: 300px;
+        display: flex;
+        justify-content: center !important;
     }
 
     .tentang-logo-content {
@@ -619,7 +622,7 @@ nav ul li a {
     }
 
     .logo-content img {
-        width: 350px;
+        width: 300px;
         margin-bottom: 4rem;
     }
 
@@ -642,6 +645,10 @@ nav ul li a {
 
     .tentang-color .color-border {
         margin-right: 0;
+    }
+
+    .text-justify {
+        font-size: 16px;
     }
 
 }
