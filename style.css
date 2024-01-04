@@ -65,6 +65,7 @@ nav ul li a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .home-content {
@@ -93,6 +94,7 @@ nav ul li a {
     background-image: url(img/Group\ 70.png);
     background-position: center top;
     background-size: cover;
+    overflow: hidden;
 }
 
 .judul-profile {
@@ -107,29 +109,6 @@ nav ul li a {
     text-align: justify;
     margin-top: 2rem;
     margin-bottom: 3rem;
-}
-
-
-.service-content .service-heading {
-    margin-bottom: 2.5rem;
-}
-
-.service-content .service-heading h1 {
-    font-weight: 800;
-}
-
-.service-content .card {
-    border: 0 !important;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.service-content .card .card-title {
-    margin-top: 25px;
-    line-height: 1.5;
-    font-weight: 700;
 }
 
 .profile-content {
@@ -156,9 +135,37 @@ nav ul li a {
     align-items: center;
 }
 
+.service {
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.service-content .service-heading {
+    margin-bottom: 2.5rem;
+}
+
+.service-content .service-heading h1 {
+    font-weight: 800;
+}
+
+.service-content .card {
+    border: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.service-content .card .card-title {
+    margin-top: 25px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
 .about {
     align-items: center;
     overflow: hidden;
+    padding-bottom: 5rem;
 }
 
 .about-content {
@@ -201,6 +208,7 @@ nav ul li a {
     align-items: center;
     min-height: 100vh;
     padding: 4rem 0;
+    overflow: hidden;
 }
 
 .jadwal-sholat-content {
@@ -418,7 +426,8 @@ nav ul li a {
     }
 
     .profile-content .text-profile {
-        font-size: 9px;
+        font-size: 16px !important;
+        font-weight: 600 !important;
     }
 
     .profile-content .profile-image {
