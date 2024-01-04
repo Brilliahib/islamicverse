@@ -6,8 +6,10 @@ window.addEventListener("scroll", function () {
 
     if (window.scrollY > scrollThreshold) {
         navbar.style.boxShadow = "0 1px 3px rgba(0, 0, 0, 0.08)";
+        navbar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
     } else {
         navbar.style.boxShadow = "none";
+        navbar.style.backgroundColor = "rgba(255, 255, 255, 0)";
     }
 });
 

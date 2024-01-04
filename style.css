@@ -108,7 +108,8 @@ nav ul li a {
 }
 
 .judul-profile {
-    color: #4C5454;
+    letter-spacing: 10px;
+    font-weight: 400;
 }
 
 .profile .profile-text .text-profile {
