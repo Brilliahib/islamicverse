@@ -86,6 +86,76 @@ nav ul li a {
     color: #4a4a4a;
 }
 
+.profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/Group\ 70.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.judul-profile {
+    color: #4C5454;
+}
+
+.profile .profile-text .text-profile {
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4C5454;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.service-content .service-heading {
+    margin-bottom: 2.5rem;
+}
+
+.service-content .service-heading h1 {
+    font-weight: 800;
+}
+
+.service-content .card {
+    border: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.service-content .card .card-title {
+    margin-top: 25px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.profile-content .button {
+    padding: 16px 36px;
+    background-color: #009462;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 148, 98, 0.5);
+}
+
+.profile-content .profile-text {
+    flex: 1;
+}
+
+.profile-content .profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .about {
     align-items: center;
     overflow: hidden;
@@ -327,6 +397,34 @@ nav ul li a {
 
     .home-content {
         display: block;
+    }
+
+    .profile {
+        padding: 4rem 0;
+    }
+
+    .profile-content {
+        display: block !important;
+    }
+
+    .profile-content img {
+        width: 300px;
+    }
+
+    .profile-content .text-profile {
+        font-size: 9px;
+    }
+
+    .profile-content .profile-image {
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-content .profile-image img {
+        width: 300px;
+        height: 250px;
     }
 
     br {
