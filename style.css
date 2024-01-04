@@ -608,7 +608,7 @@ nav ul li a {
     }
 
     .tentang-content .tentang-image img {
-        width: 300px;
+        width: 350px;
         display: flex;
         justify-content: center !important;
     }
@@ -628,6 +628,7 @@ nav ul li a {
 
     .breakdown-logo {
         flex-direction: column;
+        margin-bottom: 3rem !important;
 
     }
 
@@ -649,6 +650,11 @@ nav ul li a {
 
     .text-justify {
         font-size: 16px;
+    }
+
+    .logo-content-img {
+        display: flex;
+        justify-content: center;
     }
 
 }
