@@ -172,6 +172,12 @@ nav ul li a {
     width: 600px;
 }
 
+.about-content .about-image {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .about-content .about-text h1 {
     font-weight: 800;
     font-size: 3.5em;
