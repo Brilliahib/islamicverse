@@ -543,6 +543,10 @@ nav ul li a {
         display: block;
     }
 
+    .about-content .button {
+        margin-bottom: 4rem;
+    }
+
     .about-text {
         padding-top: 4rem;
     }
