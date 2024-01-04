@@ -56,6 +56,13 @@ nav ul li a {
     border-radius: 12px;
 }
 
+.text-justify {
+    line-height: 2;
+    font-size: 18px;
+    color: #4C5454;
+    text-align: justify;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -93,7 +100,7 @@ nav ul li a {
     align-items: center;
     background-image: url(img/Group\ 70.png);
     background-position: center top;
-    background-size: cover;
+    background-size: 100%;
     overflow: hidden;
 }
 
@@ -165,7 +172,7 @@ nav ul li a {
 .about {
     align-items: center;
     overflow: hidden;
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .about-content {
@@ -390,6 +397,85 @@ nav ul li a {
     background-color: #44b927;
 }
 
+/* PAGE TENTANG */
+.tentang {
+    padding: 6rem 0;
+}
+
+.tentang-logo {
+    padding: 6rem 0;
+}
+
+.tentang-logo .logo-title {
+    margin-bottom: 4rem;
+}
+
+.tentang-logo .logo-title h3 {
+    letter-spacing: 10px;
+}
+
+.tentang-logo .breakdown-logo {
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.tentang-logo .breakdown-logo img {
+    margin-right: 2rem;
+}
+
+.tentang-logo .breakdown-logo h3 {
+    color: #009462;
+    margin-bottom: 1.5rem;
+}
+
+.tentang-logo .logo-title hr {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.tentang-color .color-border {
+    padding: 2.5rem 6rem;
+    background-color: #009462;
+    margin-bottom: 2rem;
+}
+
+.tentang-color {
+    padding: 4rem 0;
+}
+
+.tentang-color .tentang-color-title {
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.tentang-color .tentang-color-title hr {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.tentang-color .tentang-color-title h3 {
+    letter-spacing: 10px;
+}
+
+.tentang-color .color-border {
+    margin-right: 3rem;
+}
+
+.tentang-color .color-content {
+    margin-bottom: 4rem;
+}
+
+.main-tentang {
+    background-image: url(img/Group\ 70.png);
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+
 
 @media (max-width: 576px) {
     html {
@@ -505,6 +591,57 @@ nav ul li a {
     .quiz-container {
         width: 350px;
         margin: 4rem 0;
+    }
+
+    .tentang-content {
+        flex-direction: column;
+    }
+
+    .tentang-content .tentang-text {
+        width: 100% !important;
+        margin-bottom: 4rem;
+    }
+
+    .tentang-content .tentang-image {
+        width: 100% !important;
+    }
+
+    .tentang-content .tentang-image img {
+        width: 350px;
+    }
+
+    .tentang-logo-content {
+        flex-direction: column;
+    }
+
+    .logo-content {
+        width: 100% !important;
+    }
+
+    .logo-content img {
+        width: 350px;
+        margin-bottom: 4rem;
+    }
+
+    .breakdown-logo {
+        flex-direction: column;
+
+    }
+
+    .breakdown-logo img {
+        display: none;
+    }
+
+    .color-content {
+        flex-direction: column;
+    }
+
+    .tentang-color {
+        padding: 0;
+    }
+
+    .tentang-color .color-border {
+        margin-right: 0;
     }
 
 }
