@@ -531,6 +531,7 @@ main {
 
 .card-judul {
     padding: 10px 20px;
+    border-radius: 20px;
     width: fit-content;
 }
 
@@ -756,6 +757,16 @@ main {
     .doa .img-content img {
         width: 150px !important;
         height: 150px !important;
+    }
+
+    .doa .card-text {
+        font-size: 12px !important;
+        line-height: 1.8;
+    }
+
+    .doa .card-subtitle {
+        font-size: 24px !important;
+        line-height: 1.5;
     }
 
 }
