@@ -132,6 +132,13 @@ nav ul li a {
     border-radius: 40px;
     text-decoration: none;
     color: white;
+    transition: all 0.8s ease;
+}
+
+.profile-content .button:hover {
+    background-color: #fff;
+    border: 2px solid #009462;
+    color: #009462;
 }
 
 .profile-content .profile-text {
@@ -195,10 +202,16 @@ nav ul li a {
     color: white;
 }
 
+.service-content .button:hover {
+    background-color: #fff;
+    border: 2px solid #009462;
+    color: #009462;
+}
+
 .about {
     align-items: center;
     overflow: hidden;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .about-content {
@@ -233,6 +246,13 @@ nav ul li a {
     border-radius: 40px;
     text-decoration: none;
     color: white;
+    transition: all 0.8 ease;
+}
+
+.about-content .button:hover {
+    background-color: #fff;
+    border: 2px solid #009462;
+    color: #009462;
 }
 
 .jadwal-sholat {
@@ -560,6 +580,10 @@ nav ul li a {
 
     .home-text h1 {
         font-size: 4em;
+    }
+
+    .about {
+        padding-bottom: 8rem;
     }
 
     .about-content {
