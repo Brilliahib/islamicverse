@@ -154,7 +154,7 @@ nav ul li a {
 
 .service {
     overflow: hidden;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
 .service-content .service-heading {
@@ -164,6 +164,8 @@ nav ul li a {
 
 .service-content .service-heading h1 {
     font-weight: 800;
+    font-size: 2.5em;
+    line-height: 1.5;
 }
 
 .service-content .card {
@@ -188,6 +190,9 @@ nav ul li a {
 
 .service-content .card-text {
     padding-bottom: 1rem;
+    line-height: 2;
+    font-size: 18px;
+    color: #4C5454;
 }
 
 .service-content .card {
@@ -211,7 +216,7 @@ nav ul li a {
 .about {
     align-items: center;
     overflow: hidden;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .about-content {
@@ -233,7 +238,8 @@ nav ul li a {
 
 .about-content .about-text h1 {
     font-weight: 800;
-    font-size: 3.5em;
+    font-size: 2.5em;
+    line-height: 1.5;
 }
 
 .about-content .about-text p {
@@ -611,7 +617,7 @@ main {
     }
 
     .about {
-        padding-bottom: 8rem;
+        padding-bottom: 4rem;
     }
 
     .about-content {
@@ -780,6 +786,24 @@ main {
     .gerakansholat .isi {
         font-size: 12px !important;
         line-height: 1.8;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 26px !important;
+        align-items: center !important;
+    }
+
+    .hero {
+        padding: 0 !important;
+    }
+
+    .simply-countdown>.simply-section .simply-amount,
+    .simply-countdown>.simply-section .simply-word {
+        font-size: 0.8rem !important;
+    }
+
+    .simply-countdown>.simply-section .simply-amount {
+        font-size: 0.8rem !important;
     }
 
 }
