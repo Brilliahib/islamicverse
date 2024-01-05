@@ -351,7 +351,7 @@ nav ul li a {
 
 /* GERAKAN SHOLAT */
 .gerakansholat .card-body {
-    height: 350px;
+    height: 400px;
 }
 
 .gerakansholat .card-body:hover {
@@ -377,6 +377,10 @@ nav ul li a {
 
 .gerakansholat img {
     flex-shrink: 0;
+}
+
+.gerakansholat .isi {
+    text-align: justify;
 }
 
 /*  QUIZ */
@@ -527,6 +531,10 @@ main {
 
 .doa .card {
     border-radius: 30px;
+}
+
+.doa .card-text {
+    text-align: justify;
 }
 
 .card-judul {
