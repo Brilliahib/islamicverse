@@ -588,6 +588,11 @@ main {
         height: 200px;
     }
 
+    .load img {
+        width: 400px;
+        height: 225px;
+    }
+
     nav ul li a {
         margin-left: 0;
     }
