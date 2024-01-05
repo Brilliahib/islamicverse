@@ -752,4 +752,9 @@ nav ul li a {
         padding: 2rem 0;
     }
 
+    .doa .img-content img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
 }
