@@ -68,8 +68,8 @@ function updateClock() {
         mo = now.getMonth(),
         dnum = now.getDate(),
         yr = now.getFullYear();
-    var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var month = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    var week = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
     var ids = ["dayname", "month", "daynum", "year"];
     var values = [week[dname], month[mo], dnum, yr]; // Removed unnecessary square brackets
     for (var i = 0; i < ids.length; i++)
@@ -107,82 +107,5 @@ function bulan() {
     return bulan;
 }
 
-const tanggal = `${year}-${bulan()}-${hari()}`;
-
-let namaKota = localStorage.idkota;
-function cekKota() {
-    if (!namaKota) {
-        cekKota = 667;
-    } else {
-        cekKota = namaKota;
-    }
-    return cekKota;
-}
-
-function dataJadwal(jadwal) {
-    document.querySelector('.imsak').textContent = jadwal.imsak;
-    document.querySelector('.subuh').textContent = jadwal.subuh;
-    document.querySelector('.terbit').textContent = jadwal.terbit;
-    document.querySelector('.dzuhur').textContent = jadwal.dzuhur;
-    document.querySelector('.ashar').textContent = jadwal.ashar;
-    document.querySelector('.maghrib').textContent = jadwal.maghrib;
-    document.querySelector('.isya').textContent = jadwal.isya;
-    document.querySelector('.tanggal').textContent = jadwal.tanggal;
-    if (!localStorage.namakota) {
-        window.localStorage.setItem('namakota', 'Jakarta');
-    }
-    document.querySelector('#judul-kota').textContent = localStorage.namakota;
-}
-
-
-const namaListKota = document.querySelector('.cari-kota');
-const addKota = document.querySelector('.nama-list-kota');
-namaListKota.addEventListener('keyup', function () {
-    const kotakota = namaListKota.value.length;
-    if (kotakota > 0) {
-        addKota.classList.remove('hidden-list');
-        fetch('https://api.banghasan.com/sholat/format/json/kota')
-            .then(response => response.json())
-            .then(response => {
-                const kota = response.kota;
-                let likota = ``;
-                kota.forEach(k => {
-                    likota += `<a href="#" data-idkota="${k.id}" id="inikota" class="list-group-item list-group-item-action">${k.nama}</a>`;
-                });
-                const listKota = document.querySelector('.nama-list-kota');
-                listKota.innerHTML = likota;
-
-                // ketika pilih kota
-                const inikota = document.querySelectorAll('#inikota');
-                inikota.forEach(k => {
-                    const filterText = namaListKota.value.toLowerCase();
-                    const itemText = k.firstChild.textContent.toLowerCase();
-
-                    if (itemText.indexOf(filterText) != -1) {
-                        k.setAttribute("style", "display: block;");
-                    } else {
-                        k.setAttribute("style", "display: none !important");
-                    }
-
-                    k.addEventListener('click', function () {
-                        const idkota = this.dataset.idkota;
-                        const namaKota = this.textContent;
-                        window.localStorage.setItem('idkota', idkota);
-                        window.localStorage.setItem('namakota', namaKota);
-                        document.querySelector('#judul-kota').textContent = localStorage.namakota;
-                        addKota.classList.add('hidden-list');
-                        namaListKota.value = '';
-                        location.reload();
-                        alert(`Kota ${namaKota} berhasil dipilih`);
-                    });
-                });
-
-            });
-    } else {
-        addKota.classList.add('hidden-list');
-    }
-
-});
-getJadwalDay();
 
 

@@ -806,4 +806,20 @@ main {
         font-size: 0.8rem !important;
     }
 
+    .service .card-text {
+        font-size: 16px !important;
+    }
+
+    .jadwal-sholat .date span {
+        font-size: 16px;
+    }
+
+    .jadwal-sholat .hero h3 {
+        display: none;
+    }
+
+    .jadwal-sholat {
+        min-height: fit-content !important;
+    }
+
 }
