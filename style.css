@@ -514,7 +514,7 @@ nav ul li a {
     margin-bottom: 4rem;
 }
 
-.main-tentang {
+main {
     background-image: url(img/Group\ 70.png);
     background-size: 100%;
     background-position: center bottom;
@@ -741,6 +741,7 @@ nav ul li a {
 
     .doa {
         padding: 4rem 0;
+
     }
 
     .doa .card-content {
