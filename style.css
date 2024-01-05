@@ -557,6 +557,27 @@ main {
     height: 400px;
 }
 
+.load {
+    z-index: 9999;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.load img {
+    width: 400px;
+    /* Sesuaikan ukuran gambar preloader */
+    height: 225px;
+}
+
 @media (max-width: 576px) {
     html {
         font-size: 80%;

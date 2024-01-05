@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    <div class="load">
+        <img src="img/load.gif" alt="">
+    </div>
     <nav class="navbar navbar-expand-lg body-transparent sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -258,5 +261,22 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Tampilkan preloader saat halaman dimuat
+        var preloader = document.querySelector(".load");
+
+        // Tunda penghilangan preloader dan munculnya konten
+        setTimeout(function () {
+            // Sembunyikan preloader
+            preloader.style.opacity = "0";
+            preloader.style.pointerEvents = "none";
+
+            // Tampilkan konten
+            var content = document.querySelector(".content");
+            content.style.opacity = "1";
+        }, 2500); // Sesuaikan waktu penundaan sesuai kebutuhan (dalam milidetik)
+    });
+</script>
 
 </html>
