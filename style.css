@@ -540,7 +540,7 @@ main {
 }
 
 .doa .card-body {
-    height: 380px;
+    height: 400px;
 }
 
 @media (max-width: 576px) {
