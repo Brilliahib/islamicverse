@@ -521,7 +521,26 @@ nav ul li a {
     overflow: hidden;
 }
 
+.doa {
+    padding: 6rem 0;
+}
 
+.doa .card {
+    border-radius: 30px;
+}
+
+.card-judul {
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.doa .card-subtitle {
+    margin-top: 3rem;
+}
+
+.doa .card-body {
+    height: 350px;
+}
 
 @media (max-width: 576px) {
     html {
@@ -713,6 +732,24 @@ nav ul li a {
 
     .service-content .card {
         margin-bottom: 4rem !important;
+    }
+
+    .doa .card-body {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .doa {
+        padding: 4rem 0;
+    }
+
+    .doa .card-content {
+        margin-bottom: 3rem !important;
+    }
+
+    .doa .img-content {
+        justify-content: center !important;
+        padding: 2rem 0;
     }
 
 }
