@@ -312,7 +312,7 @@ nav ul li a {
 }
 
 .jadwal {
-    padding: 4rem;
+    padding: 4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
