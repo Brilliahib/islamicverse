@@ -574,8 +574,11 @@ main {
 
 .load img {
     width: 725px;
-    /* Sesuaikan ukuran gambar preloader */
     height: 425px;
+}
+
+.hidden-list {
+    display: none;
 }
 
 @media (max-width: 576px) {

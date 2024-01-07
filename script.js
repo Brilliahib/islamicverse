@@ -84,29 +84,11 @@ function initClock() {
 // Call initClock to start the clock
 initClock();
 
-const getDate = new Date();
-const year = getDate.getFullYear();
-const month = getDate.getMonth() + 1;
-const day = getDate.getDate();
 
+const inputSearch = document.querySelector('.input-search');
+const cardList = document.querySelector('.card-list');
 
-
-function hari() {
-    if (day < 10)
-        hari = `0${day}`;
-    hari = day;
-    return hari;
-}
-
-function bulan() {
-    if (month < 10) {
-        bulan = `0${month}`;
-    } else {
-        bulan = month;
-    }
-    return bulan;
-}
-
+console.log(inputSearch)
 
 
 
