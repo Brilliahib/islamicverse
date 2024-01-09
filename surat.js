@@ -6,7 +6,7 @@ fetch(endpoint)
         let cardSurat = '';
         result.forEach(surat => {
             cardSurat += `
-            <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card mb-4 card-surat">
                         <div class="card-body" onclick="location.href='detailsurat.html?nomorsurat=${surat.nomor}'">
                             <h5 class="card-title">${surat.nomor}. ${surat.nama_latin}</h5>

@@ -321,11 +321,10 @@ nav ul li a {
 /* PAGE AYOBELAJAR.HTML */
 .card-surat {
     cursor: pointer;
-    transition: 0.8s;
 }
 
 .card-surat:hover {
-    background-color: #caded1;
+    background-color: #C6E3DE;
 }
 
 /* PAGE DETAIL SURAT AL QURAN */
@@ -544,10 +543,6 @@ main {
     background-color: #caded1;
 }
 
-.doa .card-body {
-    height: 250px;
-}
-
 .doa .card-text {
     text-align: justify;
 }
@@ -584,6 +579,56 @@ main {
 
 .hidden-list {
     display: none;
+}
+
+.footer {
+    padding-top: 48px;
+}
+
+.footer .logo {
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.footer .heading {
+    padding-top: 0px;
+    color: #000;
+}
+
+.footer .footer-img p {
+    color: #000;
+}
+
+.footer .footer-links {
+    text-align: center;
+}
+
+.footer .footer-links p a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 15px;
+}
+
+.footer .footer-links p a:hover {
+    background-color: #009462;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.footer .footer-service {
+    text-align: center;
+}
+
+.footer .footer-service p a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 15px;
+}
+
+.footer .footer-service p a:hover {
+    background-color: #009462;
+    border-radius: 8px;
+    color: #fff;
 }
 
 @media (max-width: 576px) {
@@ -859,5 +904,42 @@ main {
     .detail-doa br {
         display: inline;
     }
+
+    .footer .footer-img img {
+        width: 100px;
+    }
+
+    .footer .footer-service {
+        text-align: left;
+    }
+
+    .footer .footer-links {
+        text-align: left;
+    }
+
+    .footer .heading-footer {
+        text-align: left;
+    }
+
+    .footer .footer-links p a {
+        padding: 0;
+    }
+
+    .footer .footer-links p a:hover {
+        background-color: none;
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .footer .footer-service p a {
+        padding: 0;
+    }
+
+    .footer .footer-service p a:hover {
+        background-color: none;
+        color: #000;
+        text-decoration: underline;
+    }
+
 
 }
