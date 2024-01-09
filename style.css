@@ -536,11 +536,10 @@ main {
 
 .doa .card {
     cursor: pointer;
-    transition: 0.8s;
 }
 
 .doa .card:hover {
-    background-color: #caded1;
+    background-color: #C6E3DE;
 }
 
 .doa .card-text {

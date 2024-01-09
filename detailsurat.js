@@ -38,7 +38,7 @@ fetch(endpoint)
             <div class="card mb-3"
             <div class="card-body">
             <p>${s.nomor}.</p>
-            <h3 class="text-end">${s.ar}</h3>
+            <h2 class="text-end fw-medium lh-lg">${s.ar}</h2>
             <p class="ayat">${s.tr}</p>
             <p>${s.idn}</p>
         </div>
