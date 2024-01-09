@@ -531,7 +531,7 @@ main {
 }
 
 .doa {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .doa .card {
@@ -577,6 +577,10 @@ main {
 }
 
 .hidden-list {
+    display: none;
+}
+
+.hide-list {
     display: none;
 }
 
