@@ -77,10 +77,24 @@
     </section>
 
     <main>
-        <section id="doa" class="doa">
+        <section id="detail-doa" class="detail-doa mt-5">
             <div class="container">
-                <div class="row card-doa-list">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- informasi surat -->
+                        <div class="card mb-4">
+                            <div class="card-body mb-4 judul-doa">
 
+                            </div>
+                        </div>
+                        <!-- end informasi surat -->
+
+                        <!-- isi surat -->
+                        <div class="card-isi-doa">
+
+                        </div>
+                        <!-- end surat -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,29 +104,6 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="script.js"></script>
-<script>
-    const endpoint = 'https://equran.id/api/doa';
-
-    fetch(endpoint)
-        .then((data) => data.json())
-        .then((hasil) => {
-            let cardDoa = '';
-            hasil.forEach(doa => {
-                cardDoa += `
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="card mb-4 card-doa">
-                        <div class="card-body" onclick="location.href='doadetail.html?nomordoa=${doa.id}'">
-                            <h5 class="card-title">${doa.id}. ${doa.nama}</h5>
-                        </div>
-                    </div>
-                </div>
-            `;
-            });
-            const listDoa = document.querySelector('.card-doa-list');
-            listDoa.innerHTML = cardDoa;
-            console.log(hasil)
-        })
-</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -130,6 +121,51 @@
             content.style.opacity = "1";
         }, 2500); // Sesuaikan waktu penundaan sesuai kebutuhan (dalam milidetik)
     });
+</script>
+
+<script>
+    function getURL(e) {
+        const pageURL = window.location.search.substring(1);
+        const urlVariables = pageURL.split('&');
+
+        for (let i = 0; i < urlVariables.length; i++) {
+            const parameterName = urlVariables[i].split('=');
+            if (parameterName[0] === e) {
+                return parameterName[1];
+            }
+        }
+    }
+
+    const nomorDoa = getURL('nomordoa');
+
+    const endpoint = `https://equran.id/api/doa/${nomorDoa}`;
+
+    fetch(endpoint)
+        .then((data) => data.json())
+        .then((result) => {
+            const judulDoa = document.querySelector('.judul-doa');
+            const cardJudulDoa = `
+        <strong>${result.grup} - ${result.nama}</strong>
+        `
+            judulDoa.innerHTML = cardJudulDoa;
+            console.log(judulDoa);
+            // ISI DOA
+            const doaItem = result;  // Mengakses objek langsung
+            const isiDoa = `
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="text-end mb-4">${doaItem.ar}</h2>
+                    <p class="ayat">${doaItem.tr}</p>
+                    <p><span class="fw-bold">Artinya</span> : <br>${doaItem.idn}</p>
+                </div>
+            </div>
+        `;
+
+            // END ISI SURAT
+            const cardIsiDoa = document.querySelector('.card-isi-doa');
+            cardIsiDoa.innerHTML = isiDoa;
+        });
+
 </script>
 
 </html>

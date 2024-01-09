@@ -536,7 +536,16 @@ main {
 }
 
 .doa .card {
-    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.doa .card:hover {
+    background-color: #caded1;
+}
+
+.doa .card-body {
+    height: 250px;
 }
 
 .doa .card-text {
@@ -551,10 +560,6 @@ main {
 
 .doa .card-subtitle {
     margin-top: 3rem;
-}
-
-.doa .card-body {
-    height: 400px;
 }
 
 .load {
@@ -849,6 +854,10 @@ main {
 
     .jadwal-sholat {
         min-height: fit-content !important;
+    }
+
+    .detail-doa br {
+        display: inline;
     }
 
 }
