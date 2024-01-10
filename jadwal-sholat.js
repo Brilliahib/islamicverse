@@ -1,10 +1,12 @@
 const getDate = new Date();
 const getYear = getDate.getFullYear();
-const getMont = getDate.getMonth() + 1;
+const getMonth = getDate.getMonth() + 1;
 const getDay = getDate.getDate();
 
-const tanggal = `${getYear}/0${getMont}/0${getDay}`
+const formattedDay = getDay < 10 ? `0${getDay}` : getDay;
+const tanggal = `${getYear}/${getMonth < 10 ? `0${getMonth}` : getMonth}/${formattedDay}`;
 console.log(tanggal);
+
 
 const tampilKota = document.querySelector('.judul-kota');
 tampilKota.textContent = localStorage.judulkota;
