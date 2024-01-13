@@ -269,6 +269,10 @@ nav ul li a {
     overflow: hidden;
 }
 
+.jadwal-sholat span .badge {
+    background-color: #C6E3DE !important;
+}
+
 .jadwal-sholat-content {
     background-color: rgba(198, 227, 222, 0.3);
     border-radius: 40px;
