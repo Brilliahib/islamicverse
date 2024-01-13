@@ -273,6 +273,10 @@ nav ul li a {
     background-color: #009462 !important;
 }
 
+.jadwal .bi-geo-alt-fill {
+    fill: #009462 !important;
+}
+
 .jadwal-sholat-content {
     background-color: rgba(198, 227, 222, 0.3);
     border-radius: 40px;
